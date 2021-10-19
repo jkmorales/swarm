@@ -1,0 +1,14 @@
+#jcmorales
+
+#DONE!
+- Recorrido de Drone en ambiente.
+- Toma y guardado de fotografías.
+
+#IMPROVEMENT
+- Modular Código. POO
+
+#TODO
+- Colocar 2 o más drones en el ambiente.
+- Hacer pruebas con otra altura y dirección de cámaras.
+- Hacer pruebas con más de una persona en el ambiente.
+- Cómo se puede trabajar con imágenes segmentadas

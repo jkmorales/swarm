@@ -1,0 +1,11 @@
+Swarm/*
+
+Airsim/*
+
+!Airsim/PythonClient
+Airsim/PythonClient/*
+
+!Airsim/PythonClient/multirotor
+Airsim/PythonClient/multirotor/*
+
+!Airsim/PythonClient/multirotor/drop_the_swarm.py
