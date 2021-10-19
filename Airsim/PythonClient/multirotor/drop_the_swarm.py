@@ -1,3 +1,10 @@
+#                                                 __      _
+#  ___ __      __  __ _  _ __  _ __ ___    ___   / _|  __| | _ __   ___   _ __    ___  ___
+# / __|\ \ /\ / / / _` || '__|| '_ ` _ \  / _ \ | |_  / _` || '__| / _ \ | '_ \  / _ \/ __|
+# \__ \ \ V  V / | (_| || |   | | | | | || (_) ||  _|| (_| || |   | (_) || | | ||  __/\__ \
+# |___/  \_/\_/   \__,_||_|   |_| |_| |_| \___/ |_|   \__,_||_|    \___/ |_| |_| \___||___/
+#
+
 import os
 import sys
 import cv2
@@ -7,9 +14,10 @@ import tempfile
 import setup_path
 import numpy as np
 from datetime import datetime
+from art import *
 
 delay = 3
-height = -1.5
+height = -0.5
 speed = 2
 vehicle_name = "Drone01"
 
@@ -56,6 +64,8 @@ def save_pictures(response_img):
             img_rgb = img1d.reshape(response.height, response.width, 3) #reshape array to 3 channel image array H X W X 3
             cv2.imwrite(os.path.normpath(path_file + '.png'), img_rgb) # write to png
 
+tprint("swarmofdrones")
+airsim.wait_key()
 client = airsim.MultirotorClient()
 client.confirmConnection()
 print("1.- In the corner # 1")

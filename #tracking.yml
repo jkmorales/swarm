@@ -3,6 +3,12 @@
 #DONE!
 - Recorrido de Drone en ambiente.
 - Toma y guardado de fotografías.
+- Repositorio Git Hub:
+  git@github.com:jkmorales/swarm.git
+- Inicio con implementación de Red Nauronal Convolucional.
+
+#PROBLEMS
+- Dataset imagenet no tiene información para person.
 
 #IMPROVEMENT
 - Modular Código. POO
