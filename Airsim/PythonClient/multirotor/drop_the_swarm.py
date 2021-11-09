@@ -64,7 +64,7 @@ def save_pictures(response_img):
             img_rgb = img1d.reshape(response.height, response.width, 3) #reshape array to 3 channel image array H X W X 3
             cv2.imwrite(os.path.normpath(path_file + '.png'), img_rgb) # write to png
 
-tprint("swarmofdrones")
+tprint("swarm")
 airsim.wait_key()
 client = airsim.MultirotorClient()
 client.confirmConnection()
