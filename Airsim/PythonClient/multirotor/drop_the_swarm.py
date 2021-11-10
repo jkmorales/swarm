@@ -31,6 +31,7 @@ def get_images():
         airsim.ImageRequest("1", airsim.ImageType.Scene, False, False),
         airsim.ImageRequest(0, airsim.ImageType.Infrared),
         airsim.ImageRequest(1, airsim.ImageType.Segmentation, False, False),
+        #success = client.simSetSegmentationObjectID("Ground", 20);
         ],vehicle_name=vehicle_name)
     print(vehicle_name, ' : Retrieved images: %d' % len(response))
 
@@ -38,7 +39,7 @@ def get_images():
 
 def save_pictures(response_img):
     print('saving .  .   .')
-    tmp_dir = 'C:\Swarm\images'
+    tmp_dir = 'C:\Swarm\images\persons'
     try:
         os.makedirs(tmp_dir)
     except OSError:
